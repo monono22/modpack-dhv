@@ -1,0 +1,212 @@
+{
+    "images":
+    {
+        "modpack":
+        {
+            "image" : "mainmenu:modpack2.png",
+            "posX" : -256,
+            "posY" : -256,
+            "width" : 256,
+            "height" : 256,
+            "alignment" : "bottom_right"
+        },
+        "helios":
+        {
+            "image" : "mainmenu:helios.png",
+            "posX" : -25,
+            "posY" : -30,
+            "width" : 21,
+            "height" : 25,
+            "alignment" : "bottom_right"
+        },
+        "black":
+        {
+            "image" : "mainmenu:bar.png",
+            "posX" : 20,
+            "posY" : 0,
+            "width" : 150,
+            "height" : 2000,
+            "alignment" : "top_left"
+        },
+        "title":
+        {
+            "image" : "custommainmenu:textures/gui/minecraft.png",
+            "posX" : 180,
+            "posY" : -22,
+            "width" : 512,
+            "height" : 512,
+            "alignment" : "left_center"
+        }
+    },
+    
+    "buttons":
+    {
+        "singleplayer":
+        {
+            "text" : "menu.singleplayer",
+            "posX" : 25,
+            "posY" : -58,
+            "width" : 140,
+            "height" : 20,
+            "alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "singleplayer"
+            }
+        },
+        
+        "multiplayer":
+        {
+            "text" : "menu.multiplayer",
+            "posX" : 25,
+            "posY" : -34,
+            "width" : 140,
+            "height" : 20,
+            "alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "multiplayer"
+            }
+        },
+
+        "connect":
+        {
+            "text" : "Connect to HeliosRealms",
+            "posX" : 25,
+            "posY" : -10,
+            "width" : 140,
+            "height" : 20,
+            "alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "connectToServer",
+                "ip": "td.heliosrealms.com"
+            }
+        },
+        
+        "mods":
+        {
+            "text" : "Mods",
+            "posX" : 25,
+            "posY" : 14,
+            "width" : 140,
+            "height" : 20,
+            "alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "mods"
+            }
+        },
+            
+        "options":
+        {
+            "text" : "menu.options",
+            "posX" : 25,
+            "posY" : 38,
+            "width" : 68,
+            "height" : 20,
+            "alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "options"
+            }
+        },
+        
+        "quit":
+        {
+            "text" : "menu.quit",
+            "posX" : 97,
+            "posY" : 38,
+            "width" : 68,
+            "height" : 20,
+            "alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "quit"
+            }
+        },
+        
+        "language":
+        {
+            "text" : "",
+            "posX" : 25,
+            "posY" : 62,
+            "width" : 20,
+            "height" : 20,
+            "alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "languages"
+            }
+        }
+    },
+    
+    "texts":
+    {
+        "mojang":
+        {
+            "text" : "Copyright Mojang AB",
+            "posX" : -108,
+            "posY" : 5,
+            "color" : -1,
+            "alignment" : "top_right"
+        },
+
+        "forge":{
+            "text" : "Minecraft #mcversion#",
+            "posX" : 28,
+            "posY" : -28,
+            "color" : -1,
+            "alignment" : "bottom_left"
+        },
+        "modpack":{
+            "text" : "Danger! High Voltage v1",
+            "posX" : 28,
+            "posY" : -17,
+            "color" : -1,
+            "alignment" : "bottom_left"
+        },
+        "poweredby":{
+            "text" : "Powered By",
+            "posX" : -88,
+            "posY" : -28,
+            "color" : -1,
+            "alignment" : "bottom_right"
+        },
+        "projectfluix":{
+            "text" : "Project Fluix",
+            "posX" : -98,
+            "posY" : -17,
+            "color" : -1,
+            "alignment" : "bottom_right"
+        }
+    },
+    
+    "other":
+    {
+        "splash-text":
+        {
+            "posX" : 420,
+            "posY" : 10,
+            "color" : -256,
+            "alignment" : "left_center",
+            "file" : "texts/splashes.txt"
+        },
+        
+        "background":
+        {
+            "image" : "",
+            "slideshow":
+            {
+                "images" : ["mainmenu:screenshot1.jpg","mainmenu:screenshot2.jpg","mainmenu:screenshot3.jpg"],
+                "displayDuration" : 100,
+                "fadeDuration" : 40
+            }
+        }
+    }
+}
