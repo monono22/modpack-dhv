@@ -73,7 +73,7 @@
 
         "connect":
         {
-            "text" : "Connect to HeliosRealms",
+            "text" : "Connect to Test Server",
             "posX" : 25,
             "posY" : -10,
             "width" : 140,
@@ -82,7 +82,7 @@
             "action" : 
             {
                 "type" : "connectToServer",
-                "ip": "td.heliosrealms.com"
+                "ip": "m2.heliosrealms.com:25512"
             }
         },
         
