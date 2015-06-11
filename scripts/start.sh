@@ -22,5 +22,12 @@ do
     fi
 done
 
+# Remove clientside mods
+rm -rf $MODPACK_DIR/mods/InventoryTweaks-1.58-147.jar
+rm -rf $MODPACK_DIR/mods/AnimationAPI-1.7.10-1.2.4.jar
+rm -rf $MODPACK_DIR/mods/JourneyMap5.0.1_Unlimited_MC1.7.10.jar
+rm -rf $MODPACK_DIR/mods/ResourceLoader-1.2.jar
+rm -rf $MODPACK_DIR/mods/CustomMainMenu-MC1.7.10-1.5.jar
+
 # Run via RemoteToolkit
 java -Xmx30M -Xms30M -XX:MaxPermSize=40M -jar $FORGE_DIR/toolkit/wrapper.jar -hold
