@@ -14,7 +14,7 @@ if [ ! -f "${FORGE_DIR}/forge-${FORGE_VERSION}-universal.jar" ]; then
 fi
 
 # Symlink everything in the modpack
-SYMLINKS=("assets" "config" "mods" "resources" "server.properties" "toolkit")
+SYMLINKS=("assets" "config" "mods" "resources" "server.properties" "toolkit" "eula.txt")
 for f in "${SYMLINKS[@]}"
 do
     if [ ! -L "${MODPACK_DIR}/${f}" ]; then
