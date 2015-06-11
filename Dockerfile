@@ -10,6 +10,7 @@ RUN echo debconf shared/accepted-oracle-license-v1-1 seen true | debconf-set-sel
 RUN apt-get install -y oracle-java8-installer
 
 EXPOSE 20112
+EXPOSE 25512
 
 ADD ./scripts/start.sh /start.sh
 RUN chmod +x /start.sh
