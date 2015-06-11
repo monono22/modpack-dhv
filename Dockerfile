@@ -9,7 +9,9 @@ RUN echo debconf shared/accepted-oracle-license-v1-1 select true | debconf-set-s
 RUN echo debconf shared/accepted-oracle-license-v1-1 seen true | debconf-set-selections
 RUN apt-get install -y oracle-java8-installer
 
+EXPOSE 20112
+
 ADD ./scripts/start.sh /start.sh
 RUN chmod +x /start.sh
-VOLUME ["/data"]
+VOLUME ["/data", "/opt/modpack-dhv"]
 CMD ["/start.sh"]
