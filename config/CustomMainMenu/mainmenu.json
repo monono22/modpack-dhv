@@ -82,7 +82,7 @@
             "action" : 
             {
                 "type" : "connectToServer",
-                "ip": "m2.heliosrealms.com:25512"
+                "ip": "m1.heliosrealms.com:25512"
             }
         },
         
